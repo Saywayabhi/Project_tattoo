@@ -5,32 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body >
+<body>
     <div id="video-container">
         <video id="video" autoplay muted>
             <source src="intro.mp4" type="video/mp4">
         </video>
     </div>
-    <div id="content" style="display:none;">
-        <center>
-            <img src="logo.png" class="abhi">
-            <div class="btn-group">
-                <button>CONTACT</button>
-                <button>ARTIST</button>
-                <button>REVIEW</button>
-                <button>MAP</button>
+    <div id="content" class="container" style="display:none;">
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <img src="logo.png" class="abhi img-fluid">
+                <div class="btn-group mt-3">
+                    <button class="button">CONTACT</button>
+                    <button class="button">ARTIST</button>
+                    <button class="button">REVIEW</button>
+                    <button class="button">MAP</button>
+                </div>
             </div>
-        </center>
+        </div>
     </div>
-       <script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
         var video = document.getElementById("video");
         var content = document.getElementById("content");
-        
+
         // hide content initially
         content.style.display = "none";
-        
+
         // show content when video ends
         video.onended = function() {
             video.pause();
@@ -38,6 +43,6 @@
             content.style.display = "block";
         };
     </script>
+    
 </body>
-
 </html>
