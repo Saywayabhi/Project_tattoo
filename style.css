@@ -5,26 +5,26 @@
             background-position: center;
             background-repeat: no-repeat;
         }
-
+        
         .abhi {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 50%;
-            height: auto;
+            height: 50%;
         }
-
-    button{
-    background: linear-gradient(to right,#A57c00, #FFDF01);
-    border: 1px solid rgb(32, 34, 11); 
-    color: black;
-    cursor: pointer; 
-    height: 30px;
-    width: 100px;
-    border-radius: 10px 10px 10px 10px; 
-    position: relative;
-} 
-
+        
+        button {
+            background: linear-gradient(to right, #A57c00, #FFDF01);
+            border: 1px solid rgb(32, 34, 11);
+            color: black;
+            cursor: pointer;
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            position: relative;
+        }
+        
         #video-container {
             position: fixed;
             z-index: 999;
@@ -34,12 +34,35 @@
             height: 100%;
             overflow: hidden;
         }
-
+        
         #video {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            min-width: 100%;
-            min-height: 100%;
+            width: 100%;
+            height: auto;
         }
+        
+        #content {
+            display: none;
+            padding-top: 20px;
+        }
+        
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .btn-group button {
+            margin: 0 10px;
+        }
+        
+        @media (min-width: 768px) {
+            .abhi {
+                width: 30%;
+                height: 30%;
+            }
+        }
+    
