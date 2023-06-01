@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div id="video-container">
+        <video id="video" autoplay muted>
+            <source src="intro.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="content" style="display:none;">
+        <center>
+            <img src="logo.png" class="abhi">
+            <div class="btn-group">
+                <button>CONTACT</button>
+                <button>ARTIST</button>
+                <button>REVIEW</button>
+                <button>MAP</button>
+            </div>
+        </center>
+    </div>
+       <script>
+        var video = document.getElementById("video");
+        var content = document.getElementById("content");
+        
+        // hide content initially
+        content.style.display = "none";
+        
+        // show content when video ends
+        video.onended = function() {
+            video.pause();
+            video.style.display = "none";
+            content.style.display = "block";
+        };
+    </script>
+</body>
+
+</html>
