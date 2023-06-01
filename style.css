@@ -1,7 +1,8 @@
 
     body {
         background-image: url("bg.jpg");
-        background-size: cover ;
+        marg
+        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
     }
