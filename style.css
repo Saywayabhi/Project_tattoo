@@ -1,18 +1,17 @@
 
     body {
         background-image: url("bg.jpg");
-        marg
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-size: cover;
+        background-position : center ;
+        background-repeat : no-repeat ;
     }
         
-        .abhi {
-            display: block;
+    .abhi {
+            display:block;
             margin-left: auto;
             margin-right: auto;      
-            width: 100% ;
-            height: auto; 
+            width: 50% ;
+            height: 50%; 
         }
         
         button {
@@ -60,9 +59,9 @@
             margin: 0 10px;
         }
         
-        @media (min-width: 768px) {
+        @media (min-width:76px) {
             body {
-                background-size: auto cover;
+                background-size: auto;
             }
 
             .abhi {
