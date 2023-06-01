@@ -1,17 +1,17 @@
 
-        body {
-            background-image: url("bg.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+    body {
+        background-image: url("bg.jpg");
+        background-size: cover ;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
         
         .abhi {
             display: block;
             margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-            height: 50%;
+            margin-right: auto;      
+            width: 100% ;
+            height: auto; 
         }
         
         button {
@@ -60,9 +60,14 @@
         }
         
         @media (min-width: 768px) {
-            .abhi {
-                width: 30%;
-                height: 30%;
+            body {
+                background-size: auto cover;
             }
+
+            .abhi {
+                max-width: 30%;
+            }
+        
+            
         }
     
