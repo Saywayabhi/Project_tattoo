@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Website</title>
     <link rel="stylesheet" href="style.css">
-   
 </head>
 <body>
     <div id="video-container">
@@ -14,28 +12,30 @@
             <source src="intro.mp4" type="video/mp4">
         </video>
     </div>
-    <div id="content">
-        <center>
-            <img src="logo.png" class="abhi">
-            <div class="btn-group">
-                <button>CONTACT</button>
-                <button>ARTIST</button>
-                <button>REVIEW</button>
-                <button>MAP</button>
+
+    <div class="background-image">
+        <div class="center-image">
+            <img src="logo.png" alt="Center Image">
+            <div class="button-group">
+                <button class="button">CONTACT</button>
+                    <button class="button">ARTIST</button>
+                    <button class="button">REVIEW</button>
+                    <button class="button">MAP</button>
             </div>
-        </center>
+        </div>
     </div>
+
     <script>
         var video = document.getElementById("video");
-        var content = document.getElementById("content");
-        
-        // Hide content initially
+        var videoContainer = document.getElementById("video-container");
+        var content = document.querySelector(".background-image");
+
+        // Hide the content initially
         content.style.display = "none";
-        
-        // Show content when video ends
+
+        // Play the video and show the content when the video ends
         video.onended = function() {
-            video.pause();
-            video.style.display = "none";
+            videoContainer.style.display = "none";
             content.style.display = "block";
         };
     </script>
